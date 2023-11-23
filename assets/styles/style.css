@@ -1,11 +1,11 @@
-body {
+main {
     background-color: #252B42;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Montserrat;
 }
-
+/*--main-section--*/
 .main-section{
     background: url("../images/first-section-image.png"), lightgray 50% / cover no-repeat;
     display: flex;
@@ -44,7 +44,6 @@ body {
 }
 
 
-
 .navigation{
     display: flex;
     gap: 21px;
@@ -67,7 +66,6 @@ body {
     display: flex;
     gap: 45px;
     align-items: center;
-
 }
 
 .site-hat__button{
@@ -81,7 +79,6 @@ body {
     letter-spacing: 0.2px;
     border: none;
     display: flex;
-    padding: 15px 25px;
     align-items: center;
     gap: 15px;
 }
@@ -96,6 +93,48 @@ body {
 
 .site-hat__button:hover{
     cursor: pointer;
+}
+
+
+
+.main-section__title{
+    color: #23A6F0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.main-section__header{
+    color: #FFF;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+
+.main-section__subheader{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+
+.main-section__button{
+    border-radius: 5px;
+    background: #23A6F0;
+    padding: 15px 40px;
+    color:  #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    border: none;
+}
+
+.main-section__button:hover{
+    cursor:pointer;
 }
 
 /*----section----*/
@@ -116,6 +155,15 @@ section__courses-header{
     gap:35px;
     width: 500px;
     text-align: start;
+}
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    padding: 112px 0;
+    width: 600px;
 }
 
 .red-rectangle{
@@ -163,6 +211,28 @@ section__courses-header{
 .section__course-carousel{
     margin-top: 80px;
 }
+
+
+.section-footer-2{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    max-width: 1050px;
+    align-items: center;
+    justify-content: center;
+     margin:auto;
+}
+
+.section-footer-2__text{
+    color:  #737373;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+
+}
+
 
 /*------*/
 .block_more{
@@ -501,6 +571,176 @@ section__courses-header{
 }
 
 /*--------*/
+
+.teacher-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 96px;
+}
+
+.teacher-card-item{
+    display: flex;
+    width: 500px;
+    padding: 25px 25px 0px 25px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.teacher-card-item__img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.teacher-card-item__content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 15px;
+}
+
+.teacher-card-item__content-text{
+    color: #737373;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.teacher-rating__container{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.teacher-info__container{
+    display: flex;
+    padding: 0px 25px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.teacher-name{
+    color:#252B42;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.teacher-specification{
+    color:#737373;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.email-input-form{
+    margin-top: 80px;
+    display: flex;
+    width: 688px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+    background: #F9F9F9;
+}
+
+.email-input-form__input{
+    width: 100%;
+    height: 60px;;
+    border: none;
+    color:  #737373;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding-left: 20px;
+}
+
+.email-input-form__button{
+    display: flex;
+    width: 117px;
+    height: 60px;
+    padding: 15px 22.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #E6E6E6;
+    background:  #23A6F0;
+
+    color:#FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.email-input-form__button:hover{
+    cursor:pointer;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0;
+    max-width: 1050px;
+    gap: 30px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 240px;
+}
+
+.footer-column__header{
+    color:  #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.footer-column-elem{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.social-nets-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-net-elem{
+    width: 24px;
+    height: auto;
+}
+
+.social-net-elem:hover{
+    cursor: pointer;
+}
+
+.footer-column-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+
+}
 
 @media screen and (max-width: 400px) {
     .section{
