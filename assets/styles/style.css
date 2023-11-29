@@ -5,6 +5,8 @@ main {
     align-items: center;
     font-family: Montserrat;
 }
+
+
 /*--main-section--*/
 .main-section{
     background: url("../images/first-section-image.png"), lightgray 50% / cover no-repeat;
@@ -35,6 +37,16 @@ main {
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0.1px;
+}
+
+.mobile-menu-button{
+    height: 30px;
+    width: 30px;
+    display: none;
+
+    @media screen and (max-width: 400px){
+        display: block;
+    }
 }
 
 .site-hat__menu{
@@ -562,12 +574,13 @@ section__courses-header{
 }
 
 .cascade-img-item-2{
-    top: -270px;
+    top: -500px;
+    left: 392px;
 }
 
 .cascade-img-item-3{
     top: -90px;
-    left: 75px;
+    left: -40px;
 }
 
 /*--------*/
@@ -743,8 +756,41 @@ section__courses-header{
 }
 
 @media screen and (max-width: 400px) {
+
+    body {
+        background-color: #252B42;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .main-section{
+        width: 380px;
+    }
+
+    .main-section-content{
+        padding: 0 20px;
+    }
+
     .section{
-        padding: 100px 10px;
+        padding: 50px 10px;
+        width: 350px;
+    }
+
+    .section-content{
+        width: 350px;
+    }
+
+    .section__courses{
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 350px
+    }
+
+    .section-join-us{
+        display: flex;
+        align-items:center;
     }
 
     .section-header {
@@ -753,12 +799,115 @@ section__courses-header{
         line-height: 40px;
     }
 
+    .section-header__subheader{
+        width: 330px;
+    }
+
+    .subheader__cascade{
+        align-items: center;
+    }
+
+    .site-hat__menu{
+        flex-direction: column;
+        width: 350px;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        justify-content: flex-end;
+        height: 650px;
+        gap: 21px;
+        padding: 0 12px 12px;
+        box-sizing: border-box;
+    }
+
+    .close-button{
+        align-self: flex-end;
+    }
+
+    .navigation{
+        flex-direction: column;
+    }
+
+    .site-hat{
+        justify-content: space-between;
+    }
+
+    .site-hat__login{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .package-cart-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cascade-img-container{
+        width: 350px;
+    }
+
+    .cascade-img-item-1{
+        width:286px;
+        height:286px;
+        object-fit: fill;
+    }
+
+    .cascade-img-item-2{
+        width:80px;
+        height:42px;
+        object-fit: fill;
+        top: -320px;
+        left: 272px
+    }
+
+    .cascade-img-item-3{
+        width:173px;
+        height:173px;
+        object-fit: fill;
+        top: -60px;
+        left: -25px;
+    }
+
     .course-carousel{
          flex-direction: column;
          gap: 10px;
          align-items: center;
     }
-    body {
-        background-color: olive;
+
+    .section-header{
+        width: 350px;
     }
+
+    .teacher-card-container{
+        flex-direction: column;
+         gap: 10px;
+         align-items: center;
+    }
+
+    .teacher-card-item{
+        width: 300px;
+        box-sizing: border-box;
+    }
+
+    .email-input-form{
+        flex-direction: column;
+        background: #252B42;
+        border: none;
+        gap: 5px;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .email-input-form__button{
+        border-radius: 5px;
+        border-color: #23A6F0;
+    }
+
+    .email-input-form__input{
+        border-radius: 5px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
 }
